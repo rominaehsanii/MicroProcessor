@@ -1,4 +1,4 @@
-# MicroProcessor
+# Microprocessor
 
 This repository consists of microprocessor lab projects. Descriptions and implementations are included. 
 
