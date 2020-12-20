@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:51950EC5
+NODE:I LEVEL:0 LINE:9 "C:\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:10 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:11 "C:\cvavr\inc\delay.h"
+NODE:V LEVEL:0 LINE:13 "SevenSegment -> RAM:????"
+NODE:V LEVEL:0 LINE:14 "tre_time -> R4,R5"
+NODE:V LEVEL:0 LINE:15 "count -> R6,R7"
+NODE:F LEVEL:0 LINE:17 "timer1_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:40 "main(void)"
