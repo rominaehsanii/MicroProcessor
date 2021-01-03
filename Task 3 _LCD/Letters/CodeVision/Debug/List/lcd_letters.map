@@ -1,0 +1,28 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Letters                                                                           0x0160      26
+_base_y                                                                           0x017A       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+x                                                                                 R4,R5        2
+_lcd_x                                                                            R7           1
+_lcd_y                                                                            R6           1
+_lcd_maxx                                                                         R9           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0006C     37
+_lcd_write_nibble_G100                                                            0x00091     20
+_lcd_write_data                                                                   0x000A5     12
+lcd_gotoxy                                                                        0x000B1     13
+lcd_clear                                                                         0x000BE     10
+lcd_putchar                                                                       0x000C8     20
+lcd_init                                                                          0x000DC     43
