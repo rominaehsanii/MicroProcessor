@@ -1,0 +1,4 @@
+VERSION:3 SOURCE_TIMESTAMP:5223B4D7
+NODE:I LEVEL:0 LINE:8 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:9 "C:\cvavr\inc\alcd.h"
+NODE:F LEVEL:0 LINE:11 "main(void)"
