@@ -20,16 +20,16 @@ TCNT0=0x0C;
 if(tre_time < 20){
     if(PINC.2== 0) {
             PORTB = Step[0];   
-            delay_ms(20);
+            delay_ms(10);
             
             PORTB = Step[1];
-            delay_ms(20); 
+            delay_ms(10); 
 
             PORTB = Step[2];
-            delay_ms(20); 
+            delay_ms(10); 
 
             PORTB = Step[3];
-            delay_ms(20); 
+            delay_ms(10); 
         }    
     ++tre_time;
     } 

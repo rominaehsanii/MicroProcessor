@@ -1265,22 +1265,22 @@ _timer0_ovf_isr:
 ; 0000 0016             PORTB = Step[0];
 	LDS  R30,_Step
 	RCALL SUBOPT_0x0
-; 0000 0017             delay_ms(20);
+; 0000 0017             delay_ms(10);
 ; 0000 0018 
 ; 0000 0019             PORTB = Step[1];
 	__GETB1MN _Step,1
 	RCALL SUBOPT_0x0
-; 0000 001A             delay_ms(20);
+; 0000 001A             delay_ms(10);
 ; 0000 001B 
 ; 0000 001C             PORTB = Step[2];
 	__GETB1MN _Step,2
 	RCALL SUBOPT_0x0
-; 0000 001D             delay_ms(20);
+; 0000 001D             delay_ms(10);
 ; 0000 001E 
 ; 0000 001F             PORTB = Step[3];
 	__GETB1MN _Step,3
 	RCALL SUBOPT_0x0
-; 0000 0020             delay_ms(20);
+; 0000 0020             delay_ms(10);
 ; 0000 0021         }
 ; 0000 0022     ++tre_time;
 _0x5:
@@ -1381,7 +1381,7 @@ _Step:
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
 SUBOPT_0x0:
 	OUT  0x18,R30
-	LDI  R26,LOW(20)
+	LDI  R26,LOW(10)
 	LDI  R27,0
 	JMP  _delay_ms
 

@@ -19,7 +19,6 @@ TCNT0=0x0C;
 
 if(tre_time < 20){
     if(PINC.2== 0) {
-
             PORTB = Step[0];   
             delay_ms(20);
             
@@ -59,7 +58,6 @@ TIMSK=(0<<OCIE2) | (0<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TO
 #asm("sei")
 
 tre_time = 0;  
-
 DDRC = 0x00;   
 PINC = 0x00;  
 DDRB = 0xff;  
@@ -67,6 +65,6 @@ PORTB = 0x00;
 
 while (1)
       {
-        tre_time = 0;  
+       
       }
 }

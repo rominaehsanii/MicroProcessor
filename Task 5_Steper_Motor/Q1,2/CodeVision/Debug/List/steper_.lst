@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm Mon Jan 11 21:10:46 2021
+AVRASM ver. 2.1.30  C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm Mon Jan 11 21:31:42 2021
 
 C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm(1088): warning: Register r4 already defined by the .DEF directive
 C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm(1089): warning: Register r5 already defined by the .DEF directive
@@ -1272,28 +1272,28 @@ C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm(1089): warning: Register r
                  ; 0000 0016             PORTB = Step[0];
 000073 91e0 0160 	LDS  R30,_Step
 000075 d036      	RCALL SUBOPT_0x0
-                 ; 0000 0017             delay_ms(20);
+                 ; 0000 0017             delay_ms(10);
                  ; 0000 0018 
                  ; 0000 0019             PORTB = Step[1];
                 +
 000076 91e0 0161+LDS R30 , _Step + ( 1 )
                  	__GETB1MN _Step,1
 000078 d033      	RCALL SUBOPT_0x0
-                 ; 0000 001A             delay_ms(20);
+                 ; 0000 001A             delay_ms(10);
                  ; 0000 001B 
                  ; 0000 001C             PORTB = Step[2];
                 +
 000079 91e0 0162+LDS R30 , _Step + ( 2 )
                  	__GETB1MN _Step,2
 00007b d030      	RCALL SUBOPT_0x0
-                 ; 0000 001D             delay_ms(20);
+                 ; 0000 001D             delay_ms(10);
                  ; 0000 001E 
                  ; 0000 001F             PORTB = Step[3];
                 +
 00007c 91e0 0163+LDS R30 , _Step + ( 3 )
                  	__GETB1MN _Step,3
 00007e d02d      	RCALL SUBOPT_0x0
-                 ; 0000 0020             delay_ms(20);
+                 ; 0000 0020             delay_ms(10);
                  ; 0000 0021         }
                  ; 0000 0022     ++tre_time;
                  _0x5:
@@ -1394,7 +1394,7 @@ C:\cvavr\projects\Steper_Motor\Debug\List\steper_.asm(1089): warning: Register r
                  ;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:6 WORDS
                  SUBOPT_0x0:
 0000ac bbe8      	OUT  0x18,R30
-0000ad e1a4      	LDI  R26,LOW(20)
+0000ad e0aa      	LDI  R26,LOW(10)
 0000ae e0b0      	LDI  R27,0
 0000af 940c 00b1 	JMP  _delay_ms
                  

@@ -127,7 +127,7 @@ WatchAVR8LAutoVariables=0
 UseEEPROMLocation0=1
 RebuildAll=0
 LinkageInformationPresent=1
-COFFileTimeStamp=1378593112
+COFFileTimeStamp=1378593782
 Build=50
 [DefinedSymbolsDebug]
 Count=0
@@ -471,7 +471,7 @@ L13=Enhanced function parameters passing: Yes
 L14=Automatic register allocation: Yes
 L15=Smart register allocation: Yes
 L16=
-L17=Build: 49
+L17=Build: 50
 L18=828 line(s) compiled
 L19=No errors
 L20=No warnings
@@ -508,14 +508,6 @@ L10=[.dseg] 0x000060 0x000164      0      4      4    1024   0.4%
 L11=[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 L12=
 Lines=12
-[HeadersList]
-Files=1
-F1=C:\cvavr\projects\Steper_Motor\steper_.c
-[Header1]
-Files=3
-F1=..\..\inc\mega16.h
-F2=..\..\inc\mega16_bits.h
-F3=..\..\inc\delay.h
 [Bookmarks0]
 Row=0
 Column=0
@@ -543,3 +535,11 @@ BK8=-1
 BK9=-1
 [FoldedCode1]
 Blocks=0
+[HeadersList]
+Files=1
+F1=C:\cvavr\projects\Steper_Motor\steper_.c
+[Header1]
+Files=3
+F1=..\..\inc\mega16.h
+F2=..\..\inc\mega16_bits.h
+F3=..\..\inc\delay.h
