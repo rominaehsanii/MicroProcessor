@@ -1,0 +1,17 @@
+/*
+ * Steper_Motor_part3.c
+ *
+ * Created: 1/11/2021 9:37:38 PM
+ * Author: R
+ */
+
+#include <io.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}
